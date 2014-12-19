@@ -3,3 +3,5 @@
 	name = Artur Moczulski
 [color]
 	ui = true
+[push]
+	default = matching

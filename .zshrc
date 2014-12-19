@@ -558,3 +558,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias zshrc="gvim ~/.zshrc; source ~/.zshrc"
 alias cdmech="cd ~/Projects/mech"
 alias httpdrestart="sudo systemctl restart httpd; systemctl -l status httpd"
+
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
+nohup guake &
