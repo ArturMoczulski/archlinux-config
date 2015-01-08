@@ -51,7 +51,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
-beautiful.wallpaper = "/home/artur/wallpapers/08 - LSZ8UNW.jpg"
+beautiful.wallpaper = "/home/artur/wallpapers/07 - HP6npkv.jpg"
 
 -- Default programs
 -- This is used later as the default terminal and editor to run.
@@ -480,4 +480,8 @@ awful.util.spawn("xmodmap /home/artur/.Xmodmap")
 --local t = timer { timeout = 10 }
 --t:connect_signal("timeout", picturesque.change_image)
 --t:start()
+-- }}}
+
+-- {{{ Run guake
+awful.util.spawn("nohup guake &");
 -- }}}
